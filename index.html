@@ -1,1 +1,50 @@
-<h1>Bienvenue sur mon Wiki Ninjago</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Ninjago - Maîtres du Spinjitzu</title>
+    <style>
+        body { background-color: #0b0d0f; color: #eee; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 20px; }
+        h1 { color: #ffd700; text-transform: uppercase; letter-spacing: 3px; }
+        .container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 50px; }
+        
+        /* Style des boutons Ninja */
+        .ninja-btn { border: none; padding: 20px 30px; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 8px; transition: 0.3s; color: white; text-transform: uppercase; }
+        .ninja-btn:hover { transform: scale(1.1); box-shadow: 0 0 15px rgba(255,255,255,0.3); }
+
+        .kai { background: #d00000; border-bottom: 5px solid #800000; }
+        .jay { background: #0077b6; border-bottom: 5px solid #00507d; }
+        .cole { background: #333; border-bottom: 5px solid #000; }
+        .zane { background: #e0e1dd; color: #333; border-bottom: 5px solid #999; }
+        .lloyd { background: #38b000; border-bottom: 5px solid #2d8a00; }
+
+        #info-box { margin-top: 40px; background: #1a1c20; border: 2px solid #ffd700; padding: 30px; border-radius: 15px; max-width: 600px; margin-left: auto; margin-right: auto; min-height: 150px; }
+        .character-title { color: #ffd700; font-size: 24px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>L'Encyclopédie des Ninjas</h1>
+    <p>Sélectionne un Maître du Spinjitzu pour voir ses secrets :</p>
+
+    <div class="container">
+        <button class="ninja-btn kai" onclick="show('Kai', 'Maître du Feu. Il porte l\'Armure d\'Or. Il est courageux, protecteur et souvent très têtu !')">Kai</button>
+        <button class="ninja-btn jay" onclick="show('Jay', 'Maître de la Foudre. C\'est l\'inventeur et le comique de la bande. Il est amoureux de Nya.')">Jay</button>
+        <button class="ninja-btn cole" onclick="show('Cole', 'Maître de la Terre. Il possède une force immense et adore les gâteaux. C\'est le roc de l\'équipe.')">Cole</button>
+        <button class="ninja-btn zane" onclick="show('Zane', 'Maître de la Glace. C\'est un Nindroïde doté d\'une intelligence exceptionnelle et d\'un grand cœur.')">Zane</button>
+        <button class="ninja-btn lloyd" onclick="show('Lloyd', 'Maître de l\'Énergie et Ninja Vert. Il est le leader légendaire destiné à protéger Ninjago.')">Lloyd</button>
+    </div>
+
+    <div id="info-box">
+        <div id="content">Clique sur un bouton pour révéler les archives...</div>
+    </div>
+
+    <script>
+        function show(nom, bio) {
+            const content = document.getElementById('content');
+            content.innerHTML = `<div class="character-title">${nom}</div><p>${bio}</p>`;
+        }
+    </script>
+
+</body>
+</html>
