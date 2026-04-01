@@ -2,22 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fiche de Cole - Maître de la Terre</title>
+    <title>Archives de Cole - Sommaire</title>
     <style>
-        body { background-color: #121212; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .fiche { border: 5px solid #333; padding: 30px; border-radius: 20px; max-width: 600px; margin: auto; background: #222; }
-        h1 { color: #888; text-transform: uppercase; }
-        .back-btn { display: inline-block; margin-top: 20px; color: #ffd700; text-decoration: none; font-weight: bold; }
+        body { background-color: #0d0d0d; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
+        .menu-ninja { border: 4px solid #333; padding: 40px; border-radius: 25px; max-width: 700px; margin: auto; background: #1a1a1a; box-shadow: 0 0 20px #333; }
+        h1 { color: #888; text-transform: uppercase; letter-spacing: 2px; }
+        .sub-container { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+        .sub-btn { background: #262626; color: #ffd700; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; border: 2px solid #444; transition: 0.3s; }
+        .sub-btn:hover { background: #444; color: white; transform: scale(1.05); }
+        .back-home { display: inline-block; margin-top: 30px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="fiche">
-        <h1>Cole Hence</h1>
-        <p><strong>Élément :</strong> Terre ⚫</p>
-        <p><strong>Arme :</strong> Faux de Terre / Marteau</p>
-        <hr>
-        <p>Cole est la force brute de l'équipe. Ancien danseur, il est devenu un ninja extrêmement solide. Il adore manger (surtout des gâteaux) et il est le pilier sur lequel ses amis peuvent toujours compter.</p>
-        <a href="index.html" class="back-btn">← Retour au menu</a>
+    <div class="menu-ninja">
+        <h1>Dossier : COLE</h1>
+        <p>Sélectionne la période ou les infos que tu recherches :</p>
+        <div class="sub-container">
+            <a href="cole-enfance.html" class="sub-btn">🪨 ENFANCE & DANSE</a>
+            <a href="cole-pouvoirs.html" class="sub-btn">🌋 MAÎTRISE DE LA TERRE</a>
+            <a href="cole-futur.html" class="sub-btn">⚔️ FUTUR (DRAGONS RISING)</a>
+        </div>
+        <a href="index.html" class="back-home">← Retour au menu principal</a>
     </div>
 </body>
 </html>
