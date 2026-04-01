@@ -2,22 +2,44 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fiche de Kai - Maître du Feu</title>
+    <title>Archives de Kai - Sommaire</title>
     <style>
         body { background-color: #1a0000; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .fiche { border: 5px solid #d00000; padding: 30px; border-radius: 20px; max-width: 600px; margin: auto; background: #330000; }
-        h1 { color: #ff4d4d; text-transform: uppercase; }
-        .back-btn { display: inline-block; margin-top: 20px; color: #ffd700; text-decoration: none; font-weight: bold; }
+        .menu-ninja { border: 4px solid #d00000; padding: 40px; border-radius: 25px; max-width: 700px; margin: auto; background: #2a0000; box-shadow: 0 0 20px #d00000; }
+        h1 { color: #ff4d4d; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .sub-container { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+        
+        /* Style des sous-boutons */
+        .sub-btn { 
+            background: #440000; 
+            color: #ffd700; 
+            padding: 15px; 
+            text-decoration: none; 
+            border-radius: 10px; 
+            font-weight: bold; 
+            border: 2px solid #ff4d4d;
+            transition: 0.3s;
+        }
+        .sub-btn:hover { background: #ff4d4d; color: white; transform: scale(1.05); }
+
+        .back-home { display: inline-block; margin-top: 30px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="fiche">
-        <h1>Kai</h1>
-        <p><strong>Élément :</strong> Feu 🔥</p>
-        <p><strong>Arme :</strong> Sabre de Feu / Épée de Techno</p>
-        <hr>
-        <p>Kai est le frère aîné de Nya. Il a rejoint l'équipe après que Lord Garmadon a enlevé sa sœur. Bien qu'il soit impulsif, son courage est sans limite pour protéger ses amis.</p>
-        <a href="index.html" class="back-btn">← Retour au menu</a>
+
+    <div class="menu-ninja">
+        <h1>Dossier : KAI</h1>
+        <p>Sélectionne la période ou les infos que tu recherches :</p>
+
+        <div class="sub-container">
+            <a href="kai-enfance.html" class="sub-btn">👶 ENFANCE & ORIGINES</a>
+            <a href="kai-pouvoirs.html" class="sub-btn">🔥 MAÎTRISE DU FEU & ARMES</a>
+            <a href="kai-futur.html" class="sub-btn">⚔️ FUTUR (DRAGONS RISING)</a>
+        </div>
+
+        <a href="index.html" class="back-home">← Retour au menu principal</a>
     </div>
+
 </body>
 </html>
