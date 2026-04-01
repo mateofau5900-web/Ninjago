@@ -2,22 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fiche de Lloyd - Le Ninja Vert</title>
+    <title>Archives de Lloyd - Sommaire</title>
     <style>
         body { background-color: #0b1a00; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .fiche { border: 5px solid #38b000; padding: 30px; border-radius: 20px; max-width: 600px; margin: auto; background: #1a3300; }
-        h1 { color: #70e000; text-transform: uppercase; }
-        .back-btn { display: inline-block; margin-top: 20px; color: #ffd700; text-decoration: none; font-weight: bold; }
+        .menu-ninja { border: 4px solid #38b000; padding: 40px; border-radius: 25px; max-width: 700px; margin: auto; background: #1a3300; box-shadow: 0 0 20px #38b000; }
+        h1 { color: #70e000; text-transform: uppercase; letter-spacing: 2px; }
+        .sub-container { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+        .sub-btn { background: #2d5a00; color: #ffd700; padding: 15px; text-decoration: none; border-radius: 10px; font-weight: bold; border: 2px solid #38b000; transition: 0.3s; }
+        .sub-btn:hover { background: #38b000; color: white; transform: scale(1.05); }
+        .back-home { display: inline-block; margin-top: 30px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
-    <div class="fiche">
-        <h1>Lloyd Garmadon</h1>
-        <p><strong>Élément :</strong> Énergie 🟢</p>
-        <p><strong>Arme :</strong> Épée à deux mains / Pouvoir d'Or</p>
-        <hr>
-        <p>Fils de Lord Garmadon, Lloyd était autrefois un enfant turbulent avant de découvrir qu'il était le Ninja Vert de la prophétie. Il est devenu le leader et le Maître Spinjitzu Ultime.</p>
-        <a href="index.html" class="back-btn">← Retour au menu</a>
+    <div class="menu-ninja">
+        <h1>Dossier : LLOYD</h1>
+        <p>Sélectionne la période ou les infos que tu recherches :</p>
+        <div class="sub-container">
+            <a href="lloyd-enfance.html" class="sub-btn">👦 ENFANCE (FILS DE GARMADON)</a>
+            <a href="lloyd-pouvoirs.html" class="sub-btn">🟢 MAÎTRISE DE L'ÉNERGIE & NINJA VERT</a>
+            <a href="lloyd-futur.html" class="sub-btn">⚔️ FUTUR (DRAGONS RISING)</a>
+        </div>
+        <a href="index.html" class="back-home">← Retour au menu principal</a>
     </div>
 </body>
 </html>
