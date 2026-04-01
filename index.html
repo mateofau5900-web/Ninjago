@@ -9,7 +9,19 @@
         .container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 50px; }
         
         /* Style des boutons Ninja */
-        .ninja-btn { border: none; padding: 20px 30px; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 8px; transition: 0.3s; color: white; text-transform: uppercase; }
+        .ninja-btn { 
+            border: none; 
+            padding: 20px 30px; 
+            font-size: 18px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            border-radius: 8px; 
+            transition: 0.3s; 
+            color: white; 
+            text-transform: uppercase; 
+            text-decoration: none; /* Enlève le soulignement des liens */
+            display: inline-block; /* Pour que le bouton garde sa forme */
+        }
         .ninja-btn:hover { transform: scale(1.1); box-shadow: 0 0 15px rgba(255,255,255,0.3); }
 
         .kai { background: #d00000; border-bottom: 5px solid #800000; }
@@ -18,33 +30,25 @@
         .zane { background: #e0e1dd; color: #333; border-bottom: 5px solid #999; }
         .lloyd { background: #38b000; border-bottom: 5px solid #2d8a00; }
 
-        #info-box { margin-top: 40px; background: #1a1c20; border: 2px solid #ffd700; padding: 30px; border-radius: 15px; max-width: 600px; margin-left: auto; margin-right: auto; min-height: 150px; }
-        .character-title { color: #ffd700; font-size: 24px; margin-bottom: 10px; }
+        #info-box { margin-top: 40px; background: #1a1c20; border: 2px dashed #ffd700; padding: 20px; border-radius: 15px; max-width: 600px; margin-left: auto; margin-right: auto; }
     </style>
 </head>
 <body>
 
     <h1>L'Encyclopédie des Ninjas</h1>
-    <p>Sélectionne un Maître du Spinjitzu pour voir ses secrets :</p>
+    <p>Clique sur un Maître du Spinjitzu pour ouvrir son dossier complet :</p>
 
     <div class="container">
-        <button class="ninja-btn kai" onclick="show('Kai', 'Maître du Feu. Il porte l\'Armure d\'Or. Il est courageux, protecteur et souvent très têtu !')">Kai</button>
-        <button class="ninja-btn jay" onclick="show('Jay', 'Maître de la Foudre. C\'est l\'inventeur et le comique de la bande. Il est amoureux de Nya.')">Jay</button>
-        <button class="ninja-btn cole" onclick="show('Cole', 'Maître de la Terre. Il possède une force immense et adore les gâteaux. C\'est le roc de l\'équipe.')">Cole</button>
-        <button class="ninja-btn zane" onclick="show('Zane', 'Maître de la Glace. C\'est un Nindroïde doté d\'une intelligence exceptionnelle et d\'un grand cœur.')">Zane</button>
-        <button class="ninja-btn lloyd" onclick="show('Lloyd', 'Maître de l\'Énergie et Ninja Vert. Il est le leader légendaire destiné à protéger Ninjago.')">Lloyd</button>
+        <a href="kai.html" class="ninja-btn kai">Kai</a>
+        <a href="jay.html" class="ninja-btn jay">Jay</a>
+        <a href="cole.html" class="ninja-btn cole">Cole</a>
+        <a href="zane.html" class="ninja-btn zane">Zane</a>
+        <a href="lloyd.html" class="ninja-btn lloyd">Lloyd</a>
     </div>
 
     <div id="info-box">
-        <div id="content">Clique sur un bouton pour révéler les archives...</div>
+        <p>Astuce : Chaque bouton t'enverra vers la page secrète du ninja sélectionné.</p>
     </div>
-
-    <script>
-        function show(nom, bio) {
-            const content = document.getElementById('content');
-            content.innerHTML = `<div class="character-title">${nom}</div><p>${bio}</p>`;
-        }
-    </script>
 
 </body>
 </html>
